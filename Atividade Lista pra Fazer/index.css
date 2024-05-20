@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: "Poppins", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: "Poetsen One", sans-serif; */
+
+body, h1, ul, li, button, input{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #5fff74, #baffb8);
+  color: #333;
+}
+
+.container{
+  background-color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+h1{
+  font-family: "Poetsen One", sans-serif;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+#new-task{
+  width: calc(100% - 22px);
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#add-task-btn{
+  padding: 12px;
+  border: none;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 5px 0 #165324;
+  margin-bottom: 10px;
+
+  transition: background-color 0.3s;
+}
+
+#add-task-btn:hover{
+  background-color: #1e7532;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+li{
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: background-color 0.4s;
+}
+
+li:hover{
+  background-color: #f1f1f1;
+}
+
+li.completed{
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+button.delete-btn{
+  padding: 5px 10px;
+  border: none;
+  background-color: #a72828;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 5px 0 #531616;
+
+  transition: background-color 0.3s;
+}
+
+button.delete-btn:hover{
+  background-color: #771c1c;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
